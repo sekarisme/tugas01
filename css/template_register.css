@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+header {
+	height: 100px;
+	background-image: url("../img/sekar2.jpg");
+	display: flex;
+	grid-area: header;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid;
+}
+header h1 {
+	
+	display: inline-block;
+	float: left;
+	padding: 15px 24px;
+	text-transform: uppercase;
+}
+header ul {
+	
+	float: right;
+}
+header ul li {
+	
+	padding: 24px;
+	display: inline-block;
+}
+.submenu {
+	display: none;
+}
+.item {
+	position: relative;
+}
+.item:hover .submenu {
+	display: block;
+}
+
+.submenu {
+  position: absolute;
+  width: 100px;
+  background: #EFCC4B;
+  display: none;
+}
+a {
+	text-decoration: none;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "header header header header" "main main main aside" "footer footer footer footer";
+  width: 80vw;
+  margin: 0 auto;
+}
+main {
+  grid-area: main;
+  background: #F2E2AA;
+  height: 80vh;
+  
+}
+.gmap {
+  height: 100%;
+  width: 100%;
+}
+aside {
+  grid-area: aside;
+  background: pink;
+}
+
+
+footer {
+  grid-area: footer;
+  background: peru;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+footer ul li {
+	display: inline-block;
+	float: left;
+	padding: 15px 24px;
+}
